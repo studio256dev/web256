@@ -84,6 +84,10 @@
       @include adaptive-by-width(left, 462, 165, 600, 320);
     }
 
+    @media (min-height: 640px) {
+      width: 576px;
+    }
+
     @media (min-width: $breakpoint-md) {
       width: 576px;
       @include adaptive-by-width(left, 630, 462, 773, 600);
@@ -94,7 +98,11 @@
       left: 630px;
     }
 
-    @media (min-width: $breakpoint-md) and (max-height: 770px) {
+    @media (min-width: $breakpoint-md) and (max-height: 760px) {
+      width: 640px;
+    }
+
+    @media (min-width: $breakpoint-md) and (max-height: 690px) {
       width: 576px;
     }
   }

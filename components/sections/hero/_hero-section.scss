@@ -24,6 +24,7 @@
     color: $color-main-snow;
     font-size: 28px;
     z-index: 1;
+    line-height: 1;
 
     @media (min-width: $breakpoint-xs) {
       @include adaptive-by-width(font-size, 45, 28, 600, 320);

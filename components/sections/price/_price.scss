@@ -8,6 +8,11 @@
     width: auto;
     flex: 0 0 auto;
   }
+
+  @media (min-width: $breakpoint-md) {
+   margin-right: 100px;
+  }
+
   // .price__container
   &__container {
     height: 100%;
