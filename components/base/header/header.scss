@@ -17,6 +17,7 @@
   &__container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 10px 5px 0 10px;
 
     @media (min-width: 400px) {
