@@ -1,0 +1,184 @@
+.techs {
+  position: relative;
+  width: 100vw;
+  flex: 0 0 100vw;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 55px;
+
+  @media (min-width: 920px) {
+    margin-right: 172px;
+  }
+
+  @media (min-width: 1310px) {
+    width: auto;
+    flex: 0 0 auto;
+  }
+  // .techs__container
+  &__container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  // .techs__list
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -12px;
+
+    @media (min-width: $breakpoint-md) {
+      margin: -20px;
+    }
+
+    @media (min-width: 1310px) {
+      width: 1300px;
+      margin: -28px;
+    }
+  }
+
+  // .techs__col
+  &__col {
+    padding: 12px;
+
+    &:nth-child(1) {
+      order: 0;
+      svg {
+        width: 112px;
+        height: 28px;
+      }
+    }
+    &:nth-child(2) {
+      order: 1;
+      svg {
+        width: 153px;
+        height: 26px;
+      }
+    }
+    &:nth-child(3) {
+      order: 3;
+      svg {
+        width: 88px;
+        height: 33px;
+      }
+    }
+    &:nth-child(4) {
+      order: 2;
+      svg {
+        width: 171px;
+        height: 25px;
+      }
+    }
+    &:nth-child(5) {
+      order: 4;
+      svg {
+        width: 85px;
+        height: 30px;
+      }
+    }
+    &:nth-child(6) {
+      order: 5;
+      svg {
+        width: 75px;
+        height: 35px;
+      }
+    }
+    &:nth-child(7) {
+      order: 7;
+      svg {
+        width: 97px;
+        height: 30px;
+      }
+    }
+    &:nth-child(8) {
+      order: 8;
+      svg {
+        width: 104px;
+        height: 33px;
+      }
+    }
+    &:nth-child(9) {
+      order: 6;
+      svg {
+        width: 148px;
+        height: 43px;
+      }
+    }
+    &:nth-child(10) {
+      order: 9;
+      svg {
+        width: 97px;
+        height: 34px;
+      }
+    }
+    &:nth-child(11) {
+      order: 10;
+      svg {
+        width: 178px;
+        height: 25px;
+      }
+    }
+
+    @media (min-width: $breakpoint-md) {
+      padding: 20px;
+      order: initial !important;
+    }
+
+    @media (min-width: 800px) and (min-height: 760px) {
+      svg {
+        width: auto !important;
+        height: auto !important;
+      }
+    }
+
+    @media (min-width: 1330px) {
+      padding: 28px;
+    }
+  }
+  // .techs__item
+  &__item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  // .techs__title
+  &__title {
+    display: flex;
+    justify-content: center;
+    color: $color-main-snow;
+    font-size: 54px;
+    margin-top: 20px;
+    text-transform: uppercase;
+
+    @media (min-width: $breakpoint-xs) {
+      @include adaptive-by-width(font-size, 230, 54, 1310, 320);
+    }
+
+    @media (min-width: $breakpoint-xs) and (min-height: 650px) {
+      margin-top: 60px;
+    }
+
+    @media (min-width: $breakpoint-md) {
+      margin-top: 40px;
+    }
+
+    @media (min-width: $breakpoint-md) and (min-height: 650px) {
+      margin-top: 60px;
+    }
+
+    @media (min-width: 1200px) and (max-height: 740px) {
+      font-size: 120px;
+    }
+
+    @media (min-width: 1330px) {
+      font-size: 240px;
+      margin-top: 40px;
+    }
+
+    @media (min-width: 1330px) and (max-height: 740px) {
+      font-size: 120px;
+      margin-top: 40px;
+    }
+  }
+}

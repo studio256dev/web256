@@ -1,0 +1,27 @@
+@mixin adaptive-by-width(
+  $property,
+  $startSize,
+  $minSize,
+  $max-width,
+  $min-width
+) {
+  $addSize: $startSize - $minSize;
+  #{$property}: calc(
+    #{$minSize + px} + #{$addSize} * (100vw - #{$min-width + px}) /
+      (#{$max-width} - #{$min-width})
+  );
+}
+
+@mixin adaptive-by-height(
+  $property,
+  $startSize,
+  $minSize,
+  $max-height,
+  $min-height
+) {
+  $addSize: $startSize - $minSize;
+  #{$property}: calc(
+    #{$minSize + px} + #{$addSize} * (100vh - #{$min-height + px}) /
+      (#{$max-height} - #{$min-height})
+  );
+}

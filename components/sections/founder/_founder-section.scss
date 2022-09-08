@@ -1,0 +1,177 @@
+.founder {
+  position: relative;
+  width: 100%;
+  flex: 0 0 100vw;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 440px;
+
+  @media (min-width: 500px) {
+    margin-right: 540px;
+  }
+
+  @media (min-width: 773px) {
+    max-width: 773px;
+    flex: 0 0 auto;
+    margin-right: 580px;
+  }
+
+  &__content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__title {
+    color: $color-main-snow;
+    font-size: 28px;
+    margin-bottom: 16px;
+
+    @media (min-width: $breakpoint-xs) {
+      @include adaptive-by-width(font-size, 64, 28, 773, 320);
+    }
+
+    @media (min-width: 773px) {
+      font-size: 64px;
+      margin-bottom: 45px;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    margin-bottom: 34px;
+    color: $color-main-ash;
+
+    @media (min-width: $breakpoint-xs) {
+      @include adaptive-by-width(font-size, 32, 18, 773, 320);
+    }
+
+    @media (min-width: 773px) {
+      font-size: 32px;
+      margin-bottom: 43px;
+    }
+  }
+
+  &__info-box {
+    @media (min-width: 450px) {
+      display: flex;
+    }
+
+    li {
+      &:not(:last-child) {
+        margin-bottom: 27px;
+
+        @media (min-width: 450px) {
+          margin-bottom: 0;
+          margin-right: 64px;
+        }
+      }
+    }
+  }
+
+  &__image-container {
+    position: absolute;
+    bottom: 0;
+    left: 165px;
+    width: 476px;
+    height: 100%;
+    font-size: 0;
+
+    @media (min-width: $breakpoint-xs) {
+      @include adaptive-by-width(left, 462, 165, 600, 320);
+    }
+
+    @media (min-width: $breakpoint-md) {
+      width: 576px;
+      @include adaptive-by-width(left, 630, 462, 773, 600);
+    }
+
+    @media (min-width: 773px) {
+      width: 712px;
+      left: 630px;
+    }
+
+    @media (min-width: $breakpoint-md) and (max-height: 770px) {
+      width: 576px;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    bottom: 0;
+  }
+
+  &__nikolay {
+    position: absolute;
+    left: 350px;
+    bottom: 25px;
+
+    @media (min-width: 600px) and (min-height: 601px) {
+      bottom: 110px;
+    }
+  }
+
+  &__name {
+    font-size: 24px;
+    line-height: 24px;
+    background: #00dd00;
+    width: 255px;
+    padding: 5px 15px 5px 15px;
+
+    @media (min-width: 500px) {
+      font-size: 32px;
+      line-height: 48px;
+      width: 327px;
+    }
+  }
+
+  &__job {
+    font-size: 24px;
+    line-height: 24px;
+    background: $color-main-acid;
+    width: 180px;
+    padding: 5px 15px 5px 15px;
+
+    @media (min-width: 500px) {
+      font-size: 32px;
+      line-height: 48px;
+      width: 232px;
+    }
+  }
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+
+  // .stat__title
+  &__title {
+    font-size: 24px;
+    color: $color-main-acid;
+    margin-bottom: 5px;
+
+    @media (min-width: $breakpoint-md) {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    @media (min-width: 773px) {
+      font-size: 48px;
+    }
+  }
+  // .stat__text
+  &__text {
+    font-size: 12px;
+    color: $color-main-ash;
+    @media (min-width: $breakpoint-md) {
+      font-size: 16px;
+    }
+
+    @media (min-width: 773px) {
+      font-size: 20px;
+    }
+  }
+}

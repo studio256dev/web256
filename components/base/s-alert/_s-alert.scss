@@ -1,0 +1,57 @@
+.s-alert {
+  padding: 5px 16px;
+  height: 42px;
+  width: 100%;
+  color: $color-main-snow;
+  display: inline-flex;
+  align-items: center;
+
+  @media (min-width: $breakpoint-md) {
+    height: 70px;
+  }
+
+  &--success {
+    background-color: $color-main-acid;
+  }
+
+  &--error {
+    background-color: $color-additional-alert;
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+
+    @media (min-width: $breakpoint-md) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  &__message {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+
+    @media (min-width: $breakpoint-md) {
+      font-size: 32px;
+      font-weight: 500;
+    }
+  }
+
+  &__message__close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    color: $color-main-snow;
+
+    @media (min-width: $breakpoint-md) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}

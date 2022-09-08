@@ -1,0 +1,71 @@
+.team {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 200px);
+  align-content: center;
+  @include adaptive-by-width(margin-right, 200, 50, 1495, 300);
+
+  @media (min-width: 601px) {
+    grid-template-rows: repeat(2, 250px);
+  }
+
+  @media (min-width: 1200px) and (min-height: 800px) {
+    grid-template-rows: repeat(2, 350px);
+    margin-right: 200px;
+  }
+
+  &__list {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+
+  &__img-wrapper {
+    min-width: 186px;
+    min-height: 140px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__img {
+    width: 186px;
+
+    @media (min-width: 1000px) and (min-height: 800px) {
+      width: 294px;
+    }
+  }
+
+  &__name {
+    display: flex;
+    justify-content: center;
+    color: $color-main-snow;
+    margin-bottom: 0;
+    font-size: 12px;
+
+    @media (min-width: 501px) {
+      margin-bottom: 15px;
+      @include adaptive-by-width(margin-bottom, 15, 5, 1000, 500);
+      @include adaptive-by-width(font-size, 20, 12, 1000, 500);
+    }
+
+    @media (min-width: 1000px) {
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+  }
+
+  &__post {
+    display: flex;
+    justify-content: center;
+    color: $color-main-ash;
+    font-size: 12px;
+
+    @media (min-width: 501px) {
+      margin-bottom: 15px;
+      @include adaptive-by-width(font-size, 20, 12, 1000, 500);
+    }
+
+    @media (min-width: 1000px) {
+      font-size: 20px;
+    }
+  }
+}
