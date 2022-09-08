@@ -5,7 +5,9 @@
         <div class="portfolio-item__top">
           <div class="portfolio-item__title text-super">
             <span>{{ p.title }}</span>
-            <span class="portfolio-item__badge">{{ p.badge }}</span>
+            <a :href="p.link" target="_blank" class="portfolio-item__badge">{{
+              p.badge
+            }}</a>
           </div>
           <div class="portfolio-item__subtitle text-main">
             {{ p.subtitle }}
@@ -34,7 +36,8 @@ export default {
   portfolio: [
     {
       title: 'Med.Studio',
-      badge: 'Med.Studio',
+      badge: 'med.studio',
+      link: 'https://med.studio/',
       subtitle:
         'Онлайн-платформа для дополнительного образования медицинских сотрудников',
       sizes: '480px',
@@ -55,7 +58,8 @@ export default {
     },
     {
       title: '1С Вьетнам',
-      badge: '1С Вьетнам',
+      badge: '1c.com.vn',
+      link: 'https://1c.com.vn/vn',
       subtitle: 'Портал программных продуктов 1С для вьетнамского рынка',
       sizes: '603px',
       sources: [
@@ -76,6 +80,7 @@ export default {
     {
       title: 'ОМК',
       badge: 'openmedcom.ru',
+      link: 'https://openmedcom.ru/',
       subtitle: 'Проект дистанционного образования для врачей',
       sizes: '542px',
       sources: [
