@@ -58,7 +58,7 @@ export default {
       srcset: './videos/belashova.mp4',
     },
     {
-      name: 'Дмитрий Меллер',
+      name: 'Дмитрий Мелер',
       post: 'менеджер',
       srcset: './videos/meler.mp4',
     },
