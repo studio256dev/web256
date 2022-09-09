@@ -7,7 +7,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'new-s256',
+    title: 'Studio 256 | Разработка веб-сервисов',
     htmlAttrs: {
       lang: 'ru',
     },
