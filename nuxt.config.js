@@ -37,7 +37,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://studio256dev.github.io/web256/images/og.jpg',
+        content: 'https://studio256dev.github.io/images/og.jpg',
       },
     ],
     link: [
