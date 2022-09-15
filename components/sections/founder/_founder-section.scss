@@ -17,7 +17,7 @@
   }
 
   @media (min-width: 1600px) and (min-height: 900px) {
-    margin-right: 900px;
+    margin-right: 1000px;
   }
 
   &__content {
@@ -129,6 +129,11 @@
     @media (min-width: 600px) and (min-height: 601px) {
       bottom: 110px;
     }
+
+    @media (min-width: 1600px) and (min-height: 900px) {
+      bottom: 60px;
+      left: 500px;
+    }
   }
 
   &__name {
@@ -143,6 +148,12 @@
       line-height: 48px;
       width: 327px;
     }
+
+    @media (min-width: 1600px) and (min-height: 900px) {
+      font-size: 62px;
+      line-height: 80px;
+      width: 590px;
+    }
   }
 
   &__job {
@@ -156,6 +167,12 @@
       font-size: 32px;
       line-height: 48px;
       width: 232px;
+    }
+
+    @media (min-width: 1600px) and (min-height: 900px) {
+      font-size: 62px;
+      line-height: 80px;
+      width: 400px;
     }
   }
 }
