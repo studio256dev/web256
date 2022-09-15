@@ -16,6 +16,10 @@
     margin-right: 580px;
   }
 
+  @media (min-width: 1600px) and (min-height: 900px) {
+    margin-right: 900px;
+  }
+
   &__content {
     height: 100%;
     display: flex;
@@ -95,6 +99,11 @@
 
     @media (min-width: 773px) {
       width: 712px;
+      left: 630px;
+    }
+
+    @media (min-width: 1600px) and (min-height: 900px) {
+      width: 1000px;
       left: 630px;
     }
 

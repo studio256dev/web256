@@ -35,7 +35,7 @@
               ~/assets/images/kolya.avif    476w,
               ~/assets/images/kolya-2x.avif 952w
             "
-            sizes="476px"
+            sizes="(min-width: 1600px) 1800px, 476px"
           />
           <source
             type="image/webp"
@@ -43,7 +43,7 @@
               ~/assets/images/kolya.webp    476w,
               ~/assets/images/kolya-2x.webp 952w
             "
-            sizes="476px"
+            sizes="(min-width: 1600px) 1800px, 476px"
           />
           <img src="~/assets/images/kolya.png" alt="Основатель" />
         </picture>
