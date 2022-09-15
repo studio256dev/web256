@@ -1,5 +1,5 @@
 <template>
-  <div id="team" class="team container padding-top padding-bottom">
+  <div class="team container padding-top padding-bottom">
     <div v-for="(t, i) in $options.team" :key="i" class="team__list">
       <div class="team__img-wrapper">
         <video :src="t.srcset" class="team__img" autoplay loop muted playsinline />

@@ -1,5 +1,5 @@
 <template>
-  <section ref="hero" class="hero container padding-top">
+  <section id="home" ref="hero" class="hero container padding-top">
     <h1 ref="title" class="hero__title text-h1">
       <span>
         <span>Мы Создаём</span>
@@ -27,7 +27,7 @@
             ~/assets/images/hero-bg-mobile-x2.avif 1200w,
             ~/assets/images/hero-bg-x2.avif        1810w
           "
-          sizes="(min-width:600px) 905px, 600px"
+          sizes="(min-width: 1200px) 1800px, (min-width:600px) 905px, 600px"
         />
         <source
           type="image/webp"
@@ -37,7 +37,7 @@
             ~/assets/images/hero-bg-mobile-x2.webp 1200w,
             ~/assets/images/hero-bg-x2.webp        1810w
           "
-          sizes="(min-width:600px) 905px, 600px"
+          sizes="(min-width: 1200px) 1800px, (min-width:600px) 905px, 600px"
         />
         <source
           type="image/png"
@@ -47,7 +47,7 @@
             ~/assets/images/hero-bg-mobile-x2.png 1200w,
             ~/assets/images/hero-bg-x2.png        1810w
           "
-          sizes="(min-width:600px) 905px, 600px"
+          sizes="(min-width: 1200px) 1800px, (min-width:600px) 905px, 600px"
         />
         <source srcset="~/assets/images/hero-bg-mobile.png" />
         <img src="~/assets/images/hero-bg.png" />

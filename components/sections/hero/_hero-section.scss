@@ -41,6 +41,10 @@
       font-size: 64px;
     }
 
+    @media (min-width: 1600px) {
+      font-size: 128px;
+    }
+
     span {
       margin-left: 0;
 
@@ -83,6 +87,11 @@
         object-fit: contain;
         object-position: bottom;
       }
+    }
+
+    @media (min-width: 1600px) {
+      max-width: 1810px;
+      max-height: 1390px;
     }
   }
 

@@ -2,10 +2,19 @@
   <div>
     <header class="header">
       <div class="header__container">
-        <nuxt-link to="/" class="header__logo logo-header">
+        <!--        <nuxt-link to="#home" class="header__logo logo-header">-->
+        <div
+          class="header__logo logo-header"
+          @click="
+            $emit('click-to-link', {
+              target: 'home',
+            })
+          "
+        >
           <IconLogo class="logo-header__main" />
           <IconLogoMob class="logo-header__mob" />
-        </nuxt-link>
+        </div>
+        <!--        </nuxt-link>-->
 
         <ul class="header__list">
           <li v-for="(link, i) in $options.links" :key="i">
@@ -23,8 +32,8 @@
         </ul>
 
         <div class="header__contact header-contact">
-          <a href="tel:+78004329394" class="header-contact__phone"
-            >8 800 432 93 94</a
+          <a href="tel:+79159101112" class="header-contact__phone"
+            >8 915 910 11 12</a
           >
           <span class="header-contact__work-time"
             >По будням с 10:00 до 18:00</span

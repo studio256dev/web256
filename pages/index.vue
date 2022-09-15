@@ -91,6 +91,8 @@ export default {
       }
 
       if (target) {
+        // TODO: добавил якорь для относительной ссылки для быстро фикса, нужно переделать
+        this.$router.push(`#${target}`)
         this.$refs.main.scrollTo({
           left: targetEl.offsetLeft,
           top: 0,

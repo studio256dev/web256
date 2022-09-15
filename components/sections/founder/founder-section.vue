@@ -1,5 +1,5 @@
 <template>
-  <section class="founder container padding-top padding-bottom">
+  <section id="team" class="founder container padding-top padding-bottom">
     <div class="founder__content">
       <h2 class="founder__title text-h1">Команда</h2>
       <div class="founder__text text-main">
