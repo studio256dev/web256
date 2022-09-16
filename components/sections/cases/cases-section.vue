@@ -1,5 +1,5 @@
 <template>
-  <div id="cases" class="cases container padding-top padding-bottom">
+  <div class="cases container padding-top padding-bottom">
     <div class="cases__container">
       <div class="cases__flex">
         <div class="cases__content">

@@ -1,5 +1,5 @@
 <template>
-  <div class="portfolio container padding-top padding-bottom">
+  <div id="cases" class="portfolio container padding-top padding-bottom">
     <ul class="portfolio__list">
       <li v-for="(p, i) in $options.portfolio" :key="i" class="portfolio-item">
         <div class="portfolio-item__top">
