@@ -49,15 +49,23 @@
           "
           sizes="(min-width: 1200px) 1800px, (min-width:600px) 905px, 600px"
         />
-        <source srcset="~/assets/images/hero-bg-mobile.png" />
         <img src="~/assets/images/hero-bg.png" />
       </picture>
+    </div>
+
+    <div v-if="showSwipe" class="hero__swipe">
+      <div class="swipe">
+        <span class="swipe__icon">
+          <IconArrowRightCircle />
+        </span>
+        <span class="swipe__text text-main">Свайп</span>
+      </div>
     </div>
   </section>
 </template>
 
 <script>
-import { IconMouse, IconText } from '~/components/icons'
+import { IconMouse, IconText, IconArrowRightCircle } from '~/components/icons'
 import { debounce } from '~/utils'
 
 const OFFSETS = {
@@ -71,8 +79,13 @@ const sumOffsets = Object.values(OFFSETS).reduce((prev, cur) => cur + prev, 0)
 
 export default {
   components: {
+    IconArrowRightCircle,
     IconMouse,
     IconText,
+  },
+
+  props: {
+    showSwipe: { type: Boolean, default: true },
   },
 
   data() {

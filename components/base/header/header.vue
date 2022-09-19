@@ -2,19 +2,19 @@
   <div>
     <header class="header">
       <div class="header__container">
-        <!--        <nuxt-link to="#home" class="header__logo logo-header">-->
-        <div
+        <a
+          href="#home"
           class="header__logo logo-header"
-          @click="
+          @click.prevent="
             $emit('click-to-link', {
               target: 'home',
+              isLinkMobile: true,
             })
           "
         >
           <IconLogo class="logo-header__main" />
           <IconLogoMob class="logo-header__mob" />
-        </div>
-        <!--        </nuxt-link>-->
+        </a>
 
         <ul class="header__list">
           <li v-for="(link, i) in $options.links" :key="i">

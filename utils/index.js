@@ -25,3 +25,14 @@ export function debounce(func, ms, immediate) {
     if (callNow) func.apply(context, args)
   }
 }
+
+/**
+ * @return {Promise}
+ */
+
+export function flushPromises() {
+  const scheduler = typeof setImmediate === 'function' ? setImmediate : setTimeout
+  return new Promise((resolve) => {
+    scheduler(resolve)
+  })
+}

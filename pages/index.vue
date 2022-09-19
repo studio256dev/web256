@@ -7,7 +7,7 @@
       @click-to-link="onClickToLink"
     />
     <main ref="main" class="main-page">
-      <HeroSection />
+      <HeroSection :show-swipe="!isPageScrolled" />
       <UseSection />
       <SpecializationSection />
       <FounderSection />
@@ -36,6 +36,7 @@ import ContactSection from '~/components/sections/contact/contact-section'
 import FounderSection from '~/components/sections/founder/founder-section'
 import Header from '~/components/base/header/header'
 import AppGlobalAlert from '~/components/base/app-global-alert.vue'
+// import { flushPromises } from '~/utils'
 
 export default {
   components: {
@@ -57,6 +58,7 @@ export default {
   data() {
     return {
       isMobMenuOpened: false,
+      isPageScrolled: false,
     }
   },
 
@@ -64,10 +66,14 @@ export default {
     window.addEventListener('wheel', this.replaceVerticalScrollByHorizontal, {
       passive: false,
     })
+    this.$refs.main.addEventListener('scroll', this.onScrollMain)
+
+    setTimeout(this.setInitialScrollLeft, 50)
   },
 
   beforeDestroy() {
     window.removeEventListener('wheel', this.replaceVerticalScrollByHorizontal)
+    this.$refs.main.removeEventListener('scroll', this.onScrollMain)
   },
 
   methods: {
@@ -93,16 +99,32 @@ export default {
       if (target) {
         // TODO: добавил якорь для относительной ссылки для быстро фикса, нужно переделать
         this.$router.push(`#${target}`)
-        this.$refs.main.scrollTo({
-          left: targetEl.offsetLeft,
-          top: 0,
-          behavior: 'smooth',
-        })
+        this.scrollLeft(targetEl.offsetLeft)
       }
     },
 
     toggleMobMenu(isOpened) {
       this.isMobMenuOpened = isOpened
+    },
+
+    onScrollMain() {
+      this.isPageScrolled = true
+      this.$refs.main.removeEventListener('scroll', this.onScrollMain)
+    },
+
+    scrollLeft(offset) {
+      this.$refs.main.scrollTo({
+        left: offset,
+        top: 0,
+        behavior: 'smooth',
+      })
+    },
+
+    setInitialScrollLeft() {
+      if (this.$route.hash) {
+        const targetEl = document.querySelector(this.$route.hash)
+        this.scrollLeft(targetEl.offsetLeft)
+      }
     },
   },
 }

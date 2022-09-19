@@ -3,20 +3,30 @@
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, 200px);
   align-content: center;
-  @include adaptive-by-width(margin-right, 200, 50, 1495, 300);
+  @include adaptive-by-width(margin-right, 240, 60, 1495, 300);
 
   @media (min-width: 601px) {
     grid-template-rows: repeat(2, 250px);
   }
 
-  @media (min-width: 1200px) and (min-height: 800px) {
-    grid-template-rows: repeat(2, 350px);
-    margin-right: 200px;
+  @media (min-width: 1495px) {
+    margin-right: 240px;
   }
 
+  @media (min-width: 1200px) and (min-height: 800px) {
+    grid-template-rows: repeat(2, 350px);
+    margin-right: 240px;
+  }
+
+
   &__list {
-    margin-right: 40px;
-    margin-left: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+
+    @media (min-width: $breakpoint-md) {
+      margin-right: 22px;
+      margin-left: 22px;
+    }
   }
 
   &__img-wrapper {

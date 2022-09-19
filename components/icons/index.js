@@ -16,6 +16,7 @@ import IconPhone from './icon-phone.vue'
 import IconLogoMob from './icon-logo-mob.vue'
 import IconBurger from './icon-burger.vue'
 import IconX from './icon-x.vue'
+import IconArrowRightCircle from './icon-arrow-right-circle.vue'
 import IconAlertTriangle from './icon-alert-triangle'
 import IconCheckCircle from './icon-check-circle'
 import IconCloud from './technologies/icon-cloud'
@@ -66,4 +67,5 @@ export {
   IconCheckCircle,
   IconTelegram,
   IconWhatsApp,
+  IconArrowRightCircle,
 }

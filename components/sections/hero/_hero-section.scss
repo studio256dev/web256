@@ -70,6 +70,10 @@
     font-size: 0;
     position: relative;
 
+    @media (min-height: 650px) {
+      width: 600px;
+    }
+
     @media (min-width: $breakpoint-md) {
       max-width: 905px;
       max-height: 695px;
@@ -97,6 +101,13 @@
 
   // .hero__decor
   &__decor {
+  }
+
+  &__swipe {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: 25px;
   }
 
   &__icon-text {
@@ -211,6 +222,36 @@
 
     @media (min-width: 1100px) {
       height: 12px;
+    }
+  }
+}
+
+.swipe {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  background-color: $color-main-acid;
+  border-radius: 100px 0px 0px 100px;
+  color: $color-main-snow;
+
+  @media (min-width: 1200px) {
+    display: none;
+  }
+
+  &__text {
+    margin-left: 2px;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+      width: 20px;
+      height: 20px;
     }
   }
 }
