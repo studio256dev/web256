@@ -1,5 +1,5 @@
 <template>
-  <div class="use container padding-top padding-bottom" id="use">
+  <div id="use" class="use container padding-top padding-bottom">
     <div class="use__container">
       <p class="use__text text-big">
         Мы&nbsp;используем комплексный подход в&nbsp;работе: отталкиваясь
