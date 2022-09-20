@@ -1,4 +1,5 @@
 .cases {
+  margin-right: 70px;
   // .cases__container
   &__container {
     height: 100%;
@@ -9,6 +10,10 @@
   &__flex {
     display: flex;
     position: relative;
+
+    @media (min-width: 600px) and (min-height: 1020px) {
+      flex-direction: column;
+    }
   }
   // .cases__content
   &__content {

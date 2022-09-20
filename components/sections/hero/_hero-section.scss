@@ -5,6 +5,15 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  margin-right: 40px;
+
+  @media (min-width: 350px) and (min-height: 650px) {
+    margin-right: 150px;
+  }
+
+  @media (min-width: 430px) and (min-height: 650px) {
+    margin-right: 40px;
+  }
 
   @media (min-width: $breakpoint-md) {
     @include adaptive-by-width(margin-right, 230, 30, 1336, 600);
@@ -41,7 +50,7 @@
       font-size: 64px;
     }
 
-    @media (min-width: 2000px) and (min-height: 900px) {
+    @media (min-width: 1600px) and (min-height: 900px) {
       font-size: 128px;
     }
 
@@ -76,7 +85,6 @@
 
     @media (min-width: $breakpoint-md) {
       max-width: 905px;
-      max-height: 695px;
       height: 100%;
       width: 100%;
       margin: 0 auto;
@@ -94,8 +102,7 @@
     }
 
     @media (min-width: 1600px) and (min-height: 900px) {
-      max-width: 1810px;
-      max-height: 1390px;
+      max-width: 1500px;
     }
   }
 
@@ -204,6 +211,7 @@
 
   @media (min-width: 1366px) {
     top: 128px;
+    grid-template-columns: repeat(auto-fill, 16px);
     grid-gap: 77px;
   }
 
@@ -222,6 +230,10 @@
 
     @media (min-width: 1100px) {
       height: 12px;
+    }
+
+    @media (min-width: 1366px) {
+      height: 16px;
     }
   }
 }

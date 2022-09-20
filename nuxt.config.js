@@ -73,12 +73,20 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: ['@nuxtjs/yandex-metrika'],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 
   styleResources: {
     scss: ['./assets/scss/resources/_index.scss'],
+  },
+
+  yandexMetrika: {
+    id: '90489811',
+    webvisor: true,
+    clickmap: true,
+    trackLinks: true,
+    accurateTrackBounce: true,
   },
 }

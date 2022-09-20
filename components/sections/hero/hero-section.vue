@@ -25,9 +25,10 @@
             ~/assets/images/hero-bg-mobile.avif     600w,
             ~/assets/images/hero-bg.avif            905w,
             ~/assets/images/hero-bg-mobile-x2.avif 1200w,
-            ~/assets/images/hero-bg-x2.avif        1810w
+            ~/assets/images/hero-bg-x2.avif        1810w,
+            ~/assets/images/hero-bg-x3.avif        2715w,
           "
-          sizes="(min-width: 1200px) 1800px, (min-width:600px) 905px, 600px"
+          sizes="(min-width: 1600px) and (min-height: 900px) 1500px, (min-width:600px) 905px, 600px"
         />
         <source
           type="image/webp"
@@ -35,9 +36,10 @@
             ~/assets/images/hero-bg-mobile.webp     600w,
             ~/assets/images/hero-bg.webp            905w,
             ~/assets/images/hero-bg-mobile-x2.webp 1200w,
-            ~/assets/images/hero-bg-x2.webp        1810w
+            ~/assets/images/hero-bg-x2.webp        1810w,
+            ~/assets/images/hero-bg-x3.webp        2715w,
           "
-          sizes="(min-width: 1200px) 1800px, (min-width:600px) 905px, 600px"
+          sizes="(min-width: 1600px) and (min-height: 900px) 1500px, (min-width:600px) 905px, 600px"
         />
         <source
           type="image/png"
@@ -45,11 +47,11 @@
             ~/assets/images/hero-bg-mobile.png     600w,
             ~/assets/images/hero-bg.png            905w,
             ~/assets/images/hero-bg-mobile-x2.png 1200w,
-            ~/assets/images/hero-bg-x2.png        1810w
+            ~/assets/images/hero-bg-x2.png        1810w,
           "
-          sizes="(min-width: 1200px) 1800px, (min-width:600px) 905px, 600px"
+          sizes="(min-width: 1600px) and (min-height: 900px) 1500px, (min-width:600px) 905px, 600px"
         />
-        <img src="~/assets/images/hero-bg.png" />
+        <img src="~/assets/images/hero-bg-x2.png" />
       </picture>
     </div>
 

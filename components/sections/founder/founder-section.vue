@@ -32,18 +32,22 @@
           <source
             type="image/avif"
             srcset="
-              ~/assets/images/kolya.avif    476w,
-              ~/assets/images/kolya-2x.avif 952w
+              ~/assets/images/kolya.avif    712w,
+              ~/assets/images/kolya-2x.avif 1424w,
+              ~/assets/images/kolya-3x.avif 2136w,
+              ~/assets/images/kolya-4x.avif 2848w
             "
-            sizes="(min-width: 1600px) 1800px, 476px"
+            sizes="(min-width: 1600px) and (min-height: 900px) 1424px, 712px"
           />
           <source
             type="image/webp"
             srcset="
-              ~/assets/images/kolya.webp    476w,
-              ~/assets/images/kolya-2x.webp 952w
+              ~/assets/images/kolya.webp    712w,
+              ~/assets/images/kolya-2x.webp 1424w,
+              ~/assets/images/kolya-3x.webp 2136w,
+              ~/assets/images/kolya-4x.webp 2848w
             "
-            sizes="(min-width: 1600px) 1800px, 476px"
+            sizes="(min-width: 1600px) and (min-height: 900px) 1424px, 712px"
           />
           <img src="~/assets/images/kolya.png" alt="Основатель" />
         </picture>

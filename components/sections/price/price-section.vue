@@ -4,21 +4,13 @@
       <picture>
         <source
           type="image/avif"
-          srcset="
-            ~/assets/images/price.avif     584w,
-            ~/assets/images/price-2x.avif 1168w
-          "
-          sizes="584px"
+          src="~/assets/images/price_bg.avif"
         />
         <source
           type="image/webp"
-          srcset="
-            ~/assets/images/price.webp     584w,
-            ~/assets/images/price-2x.webp 1168w
-          "
-          sizes="584px"
+          src="~/assets/images/price_bg.webp"
         />
-        <img src="~/assets/images/price.png" alt="price" />
+        <img src="~/assets/images/price_bg.png" alt="price" />
       </picture>
     </div>
     <div class="price__container">

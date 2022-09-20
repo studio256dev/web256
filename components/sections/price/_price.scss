@@ -53,8 +53,14 @@
   // .price__flex
   &__flex {
     position: relative;
+    display: flex;
+    flex-direction: column;
     @media (min-width: 460px) {
-      display: flex;
+      flex-direction: row;
+    }
+
+    @media (min-height: 900px) {
+      flex-direction: column;
     }
   }
   // .price__top
@@ -64,6 +70,11 @@
       margin-bottom: 0;
       margin-right: 100px;
     }
+
+    @media (min-height: 900px) {
+      margin-bottom: 24px;
+    }
+
   }
   // .price__title
   &__title {
@@ -86,6 +97,15 @@
       width: 440px;
       font-size: 32px;
     }
+
+    @media (min-width: 460px) and (min-height: 900px) {
+      width: calc(100vw - 40px);
+    }
+
+    @media (min-width: 931px) and (min-height: 900px) {
+      width: 931px;
+    }
+
   }
   // .price__bot
   &__bot {
