@@ -9,6 +9,7 @@
             $emit('click-to-link', {
               target: 'home',
               isLinkMobile: true,
+              hash: true,
             })
           "
         >
@@ -24,6 +25,7 @@
                 $emit('click-to-link', {
                   target: link.href,
                   isLinkMobile: true,
+                  hash: true,
                 })
               "
               >{{ link.name }}</a
@@ -49,6 +51,7 @@
             @click="
               $emit('click-to-link', {
                 target: 'contact',
+                hash: true,
               })
             "
           >
@@ -80,6 +83,7 @@
                   $emit('click-to-link', {
                     target: link.href,
                     isLinkMobile: true,
+                    hash: true,
                   })
                 "
                 >{{ link.name }}</a
