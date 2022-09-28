@@ -7,17 +7,22 @@
       @click-to-link="onClickToLink"
     />
     <main ref="main" class="main-page">
-      <HeroSection :show-swipe="!isPageScrolled" />
-      <UseSection />
-      <SpecializationSection />
-      <FounderSection />
-      <TeamSection />
-      <CompetenciesSection />
-      <CasesSection />
-      <PortfolioSection />
-      <PriceSection />
-      <TechsSection />
-      <ContactSection />
+      <div class="main-container">
+        <HeroSection
+          :show-swipe="!isPageScrolled"
+          @click-to-link="onClickToLink"
+        />
+        <UseSection />
+        <SpecializationSection />
+        <FounderSection />
+        <TeamSection />
+        <CompetenciesSection />
+        <CasesSection />
+        <PortfolioSection />
+        <PriceSection />
+        <TechsSection />
+        <ContactSection />
+      </div>
     </main>
   </div>
 </template>
@@ -90,13 +95,17 @@ export default {
       }
     },
 
-    onClickToLink({ target, isLinkMobile }) {
+    onClickToLink({ target, isLinkMobile, hash }) {
       const targetEl = document.getElementById(target)
       if (isLinkMobile) {
         this.isMobMenuOpened = false
       }
 
       if (target) {
+        this.scrollLeft(targetEl.offsetLeft)
+      }
+
+      if (target && hash) {
         // TODO: добавил якорь для относительной ссылки для быстро фикса, нужно переделать
         this.$router.push(`#${target}`)
         this.scrollLeft(targetEl.offsetLeft)
@@ -108,8 +117,7 @@ export default {
     },
 
     onScrollMain() {
-      this.isPageScrolled = true
-      this.$refs.main.removeEventListener('scroll', this.onScrollMain)
+      this.isPageScrolled = this.$refs.main.scrollLeft !== 0
     },
 
     scrollLeft(offset) {

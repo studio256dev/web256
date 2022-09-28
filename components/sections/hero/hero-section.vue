@@ -26,7 +26,7 @@
             ~/assets/images/hero-bg.avif            905w,
             ~/assets/images/hero-bg-mobile-x2.avif 1200w,
             ~/assets/images/hero-bg-x2.avif        1810w,
-            ~/assets/images/hero-bg-x3.avif        2715w,
+            ~/assets/images/hero-bg-x3.avif        2715w
           "
           sizes="(min-width: 1600px) and (min-height: 900px) 1500px, (min-width:600px) 905px, 600px"
         />
@@ -37,7 +37,7 @@
             ~/assets/images/hero-bg.webp            905w,
             ~/assets/images/hero-bg-mobile-x2.webp 1200w,
             ~/assets/images/hero-bg-x2.webp        1810w,
-            ~/assets/images/hero-bg-x3.webp        2715w,
+            ~/assets/images/hero-bg-x3.webp        2715w
           "
           sizes="(min-width: 1600px) and (min-height: 900px) 1500px, (min-width:600px) 905px, 600px"
         />
@@ -47,7 +47,7 @@
             ~/assets/images/hero-bg-mobile.png     600w,
             ~/assets/images/hero-bg.png            905w,
             ~/assets/images/hero-bg-mobile-x2.png 1200w,
-            ~/assets/images/hero-bg-x2.png        1810w,
+            ~/assets/images/hero-bg-x2.png        1810w
           "
           sizes="(min-width: 1600px) and (min-height: 900px) 1500px, (min-width:600px) 905px, 600px"
         />
@@ -55,14 +55,27 @@
       </picture>
     </div>
 
-    <div v-if="showSwipe" class="hero__swipe">
-      <div class="swipe">
-        <span class="swipe__icon">
-          <IconArrowRightCircle />
-        </span>
-        <span class="swipe__text text-main">Свайп</span>
+    <transition name="slide-fade">
+      <div v-show="showSwipe" class="hero__swipe">
+        <div class="swipe">
+          <span class="swipe__icon">
+            <IconArrowRightCircle />
+          </span>
+
+          <span
+            class="swipe__text text-main"
+            @click.prevent="
+              $emit('click-to-link', {
+                target: 'use',
+                isLinkMobile: true,
+                hash: false,
+              })
+            "
+            >Свайп</span
+          >
+        </div>
       </div>
-    </div>
+    </transition>
   </section>
 </template>
 
