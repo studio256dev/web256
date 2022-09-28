@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/case-efremov", {data:[{}],fetch:{},mutations:void 0});
