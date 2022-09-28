@@ -82,6 +82,10 @@ export default {
     scss: ['./assets/scss/resources/_index.scss'],
   },
 
+  generate: {
+    fallback: true
+  },
+
   yandexMetrika: {
     id: '90489811',
     webvisor: true,
