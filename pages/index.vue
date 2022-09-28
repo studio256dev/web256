@@ -7,6 +7,7 @@
       @click-to-link="onClickToLink"
     />
     <main ref="main" class="main-page">
+      <div class="main-container">
         <HeroSection
           :show-swipe="!isPageScrolled"
           @click-to-link="onClickToLink"
@@ -21,6 +22,7 @@
         <PriceSection />
         <TechsSection />
         <ContactSection />
+      </div>
     </main>
   </div>
 </template>
