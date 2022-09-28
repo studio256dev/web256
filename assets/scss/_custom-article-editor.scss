@@ -1,0 +1,48 @@
+.arx-content {
+  background: $color-main-graphen;
+
+  h1 {
+    font-family: 'Grandis Condensed';
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: 500;
+    color: $color-main-snow;
+
+    @media (min-width: $breakpoint-md) {
+      line-height: 1.19;
+    }
+  }
+
+  h2, h3 {
+    font-family: 'Grandis';
+    font-weight: 500;
+    line-height: 1.33;
+    color: $color-main-snow;
+
+    @media (min-width: $breakpoint-md) {
+      line-height: 1.25;
+    }
+  }
+
+  p {
+    font-family: 'Grandis';
+    color: $color-main-ash;
+  }
+
+  li {
+    font-family: 'Grandis';
+    line-height: 1.33;
+    color: $color-main-ash;
+
+    @media (min-width: $breakpoint-md) {
+      line-height: 1.5;
+    }
+
+    &::before {
+      content: '•';
+      display: inline-flex;
+      width: 15px;
+      color: $color-main-acid;
+    }
+  }
+}
