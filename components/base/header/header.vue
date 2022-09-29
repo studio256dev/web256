@@ -9,7 +9,6 @@
             $emit('click-to-link', {
               target: 'home',
               isLinkMobile: true,
-              hash: true,
             })
           "
         >
@@ -25,7 +24,6 @@
                 $emit('click-to-link', {
                   target: link.href,
                   isLinkMobile: true,
-                  hash: true,
                 })
               "
               >{{ link.name }}</a
@@ -51,7 +49,6 @@
             @click="
               $emit('click-to-link', {
                 target: 'contact',
-                hash: true,
               })
             "
           >
@@ -83,7 +80,6 @@
                   $emit('click-to-link', {
                     target: link.href,
                     isLinkMobile: true,
-                    hash: true,
                   })
                 "
                 >{{ link.name }}</a
@@ -128,27 +124,27 @@ export default {
   links: [
     {
       name: 'О нас',
-      href: 'use',
+      href: '#use',
     },
     {
       name: 'Команда',
-      href: 'team',
+      href: '#team',
     },
     {
       name: 'Компетенции',
-      href: 'competencies',
+      href: '#competencies',
     },
     {
       name: 'Кейсы',
-      href: 'cases',
+      href: '#cases',
     },
     {
       name: 'Стоимость',
-      href: 'price',
+      href: '#price',
     },
     {
       name: 'Технологии',
-      href: 'techs',
+      href: '#techs',
     },
   ],
 }

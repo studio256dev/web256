@@ -41,7 +41,6 @@ import ContactSection from '~/components/sections/contact/contact-section'
 import FounderSection from '~/components/sections/founder/founder-section'
 import Header from '~/components/base/header/header'
 import AppGlobalAlert from '~/components/base/app-global-alert.vue'
-// import { flushPromises } from '~/utils'
 
 export default {
   components: {
@@ -95,8 +94,8 @@ export default {
       }
     },
 
-    onClickToLink({ target, isLinkMobile, hash }) {
-      const targetEl = document.getElementById(target)
+    onClickToLink({ target, isLinkMobile }) {
+      const targetEl = document.querySelector(target)
       if (isLinkMobile) {
         this.isMobMenuOpened = false
       }
@@ -105,9 +104,8 @@ export default {
         this.scrollLeft(targetEl.offsetLeft)
       }
 
-      if (target && hash) {
-        // TODO: добавил якорь для относительной ссылки для быстро фикса, нужно переделать
-        this.$router.push(`#${target}`)
+      if (target) {
+        this.$router.push(target)
         this.scrollLeft(targetEl.offsetLeft)
       }
     },

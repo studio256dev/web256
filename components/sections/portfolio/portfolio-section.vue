@@ -1,30 +1,42 @@
 <template>
   <div id="cases" class="portfolio container padding-top padding-bottom">
     <ul class="portfolio__list">
-      <li v-for="(p, i) in $options.portfolio" :key="i" class="portfolio-item">
-        <div class="portfolio-item__top">
-          <div class="portfolio-item__title text-super">
-            <span>{{ p.title }}</span>
-            <a :href="p.link" target="_blank" class="portfolio-item__badge">{{
-              p.badge
-            }}</a>
+      <li v-for="(p, i) in $options.portfolio" :key="i">
+        <div class="portfolio-item">
+          <div class="portfolio-item__top">
+            <div class="portfolio-item__title text-super">
+              <span>{{ p.title }}</span>
+              <a :href="p.link" target="_blank" class="portfolio-item__badge">{{
+                p.badge
+              }}</a>
+            </div>
+            <div class="portfolio-item__subtitle text-main">
+              {{ p.subtitle }}
+            </div>
           </div>
-          <div class="portfolio-item__subtitle text-main">
-            {{ p.subtitle }}
+          <div class="portfolio-item__img-container">
+            <img :src="p.helpImg" :alt="p.badge" class="help-img" />
+            <picture>
+              <source
+                v-for="(s, idx) in p.sources"
+                :key="idx"
+                :type="s.type"
+                :srcset="s.srcset"
+                :sizes="p.sizes"
+              />
+              <img
+                class="portfolio-item__main-img"
+                :src="p.img"
+                :alt="p.badge"
+              />
+            </picture>
           </div>
-        </div>
-        <div class="portfolio-item__img-container">
-          <img :src="p.helpImg" :alt="p.badge" class="help-img" />
-          <picture>
-            <source
-              v-for="(s, idx) in p.sources"
-              :key="idx"
-              :type="s.type"
-              :srcset="s.srcset"
-              :sizes="p.sizes"
-            />
-            <img class="portfolio-item__main-img" :src="p.img" :alt="p.badge" />
-          </picture>
+          <a
+            v-if="p.pageUrl"
+            :href="p.pageUrl"
+            class="portfolio-item__link"
+            target="_blank"
+          ></a>
         </div>
       </li>
     </ul>
@@ -34,6 +46,29 @@
 <script>
 export default {
   portfolio: [
+    {
+      title: 'Efremov',
+      badge: 'Смотреть на Behance',
+      link: 'https://www.behance.net/gallery/151467861/EFREMOV',
+      subtitle:
+        'Интернет-каталог ювелирных изделий для оптовых клиентов компании',
+      pageUrl: '/case-efremov',
+      sizes: '606px',
+      sources: [
+        {
+          type: 'image/avif',
+          srcset:
+            './images/portfolio-efremov.avif 606w, ./images/portfolio-efremov-2x.avif 1212w',
+        },
+        {
+          type: 'image/webp',
+          srcset:
+            './images/portfolio-efremov.webp 606w, ./images/portfolio-efremov-2x.webp 1212w',
+        },
+      ],
+      img: './images/portfolio-efremov.png',
+      helpImg: './images/portfolio-efremov-help.jpg',
+    },
     {
       title: 'Med.Studio',
       badge: 'med.studio',

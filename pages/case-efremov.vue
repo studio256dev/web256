@@ -1,5 +1,5 @@
 <template>
-  <div class="arx-content">
+  <div class="arx-content mw-800">
     <h1>Создание ювелирного каталога EFREMOV</h1>
     <p>
       Клиент пришёл к нам со старым каталогом, написанным лет 10 назад, уже его

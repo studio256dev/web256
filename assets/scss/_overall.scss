@@ -130,6 +130,10 @@ body {
   }
 }
 
+.mw-800 {
+  max-width: 800px;
+}
+
 @keyframes spin {
   0% {
     transform: translateX(100%) rotate(0deg);
