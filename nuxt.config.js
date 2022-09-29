@@ -19,6 +19,11 @@ export default {
         name: 'description',
         content: 'Мы создаём надёжные и красивые веб-сайты и сервисы!',
       },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Разрабатываем и поддерживаем уникальные и высоконагруженные веб-сервисы для бизнеса.',
+      },
       { name: 'format-detection', content: 'telephone=no' },
       {
         hid: 'og:title',
@@ -29,6 +34,11 @@ export default {
         hid: 'og:description',
         property: 'og:description',
         content: 'Мы создаём надёжные и красивые веб-сайты и сервисы!',
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: 'Разрабатываем и поддерживаем уникальные и высоконагруженные веб-сервисы для бизнеса.',
       },
       { property: 'og:type', content: 'website' },
       { property: 'og:image:type', content: 'image/jpg' },
@@ -53,6 +63,12 @@ export default {
       },
       { rel: 'apple-touch-icon', href: './favicon/favicon-180.png' },
     ],
+    script: [
+      {
+        src: '//af.click.ru/af.js?id=12433',
+        defer: true
+      },
+    ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
