@@ -14,9 +14,10 @@
   }
 
   h2, h3 {
+    margin-top: 40px !important;
     font-family: 'Grandis';
     font-weight: 500;
-    line-height: 1.33;
+    line-height: 1.5;
     color: $color-main-snow;
 
     @media (min-width: $breakpoint-md) {
@@ -24,14 +25,20 @@
     }
   }
 
+  h3 {
+    font-size: 18px;
+  }
+
   p {
     font-family: 'Grandis';
+    line-height: 1.5;
     color: $color-main-ash;
   }
 
   li {
+    display: flex;
     font-family: 'Grandis';
-    line-height: 1.33;
+    line-height: 1.5;
     color: $color-main-ash;
 
     @media (min-width: $breakpoint-md) {
@@ -40,9 +47,38 @@
 
     &::before {
       content: '•';
-      display: inline-flex;
       width: 15px;
+      flex: 0 0 15px;
       color: $color-main-acid;
     }
   }
+
+  blockquote {
+    background-color: #1d1d1d;
+
+    p {
+      text-align: center;
+      &:first-child {
+        font-family: 'Grandis Condensed';
+        text-transform: uppercase;
+        line-height: 1;
+        font-weight: 500;
+        color: $color-main-snow;
+
+        @media (min-width: $breakpoint-md) {
+          line-height: 1.19;
+        }
+      }
+    }
+
+    cite {
+      color: $color-main-snow;
+    }
+  }
+
+  table, td, th {
+    border: 1px solid #4c4c4c;
+    color: $color-main-snow;
+  }
+
 }
