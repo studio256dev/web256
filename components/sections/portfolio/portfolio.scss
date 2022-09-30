@@ -24,6 +24,11 @@
 
     li {
       height: 100%;
+      &:nth-child(even) {
+        .portfolio-item {
+          background-color: #1D1D1D;
+        }
+      }
     }
   }
 }
@@ -46,10 +51,6 @@
 
   @media (min-width: 1020px) {
     max-height: calc(100vh - 123px);
-  }
-
-  &:nth-child(even) {
-    background-color: #1D1D1D;
   }
 
  &__link {

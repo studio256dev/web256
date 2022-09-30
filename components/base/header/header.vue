@@ -7,7 +7,7 @@
           class="header__logo logo-header"
           @click.prevent="
             $emit('click-to-link', {
-              target: 'home',
+              target: '#home',
               isLinkMobile: true,
             })
           "
@@ -48,7 +48,7 @@
             class="request__title"
             @click="
               $emit('click-to-link', {
-                target: 'contact',
+                target: '#contact',
               })
             "
           >
