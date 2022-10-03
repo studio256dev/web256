@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: /main/
-
-Host: https://studio256.ru
