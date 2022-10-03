@@ -55,7 +55,7 @@
     Из финальных макетов была составлена схема движения пользователя по проекту - User Flow.
 </p>
 <figure>
-    <img src="~/assets/images/articles/efremov/user-flow_ef.png">
+    <img src="~/assets/images/articles/efremov/user-flow_ef.jpg">
 </figure>
 <p>
     Что получилось:
