@@ -66,9 +66,8 @@
             class="swipe__text text-main"
             @click.prevent="
               $emit('click-to-link', {
-                target: 'use',
+                target: '#use',
                 isLinkMobile: true,
-                hash: false,
               })
             "
             >Свайп</span

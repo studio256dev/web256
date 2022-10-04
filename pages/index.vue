@@ -101,10 +101,6 @@ export default {
       }
 
       if (target) {
-        this.scrollLeft(targetEl.offsetLeft)
-      }
-
-      if (target) {
         this.$router.push(target)
         this.scrollLeft(targetEl.offsetLeft)
       }
