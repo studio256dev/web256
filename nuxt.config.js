@@ -14,15 +14,6 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      {
-        hid: 'description',
-        name: 'description',
-        content: 'Мы создаём надёжные и красивые веб-сайты и сервисы!',
-      },
-      {
-        name: 'description',
-        content: 'Разрабатываем и поддерживаем уникальные и высоконагруженные веб-сервисы для бизнеса.',
-      },
       { name: 'format-detection', content: 'telephone=no' },
       {
         hid: 'og:title',
@@ -30,9 +21,18 @@ export default {
         content: 'Studio 256 | Разработка веб-сервисов',
       },
       {
+        hid: 'description',
+        name: 'description',
+        content: 'Мы создаём надёжные и красивые веб-сайты и сервисы!',
+      },
+      {
         hid: 'og:description',
         property: 'og:description',
         content: 'Мы создаём надёжные и красивые веб-сайты и сервисы!',
+      },
+      {
+        name: 'description',
+        content: 'Разрабатываем и поддерживаем уникальные и высоконагруженные веб-сервисы для бизнеса.',
       },
       {
         property: 'og:description',

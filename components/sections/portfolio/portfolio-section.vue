@@ -6,7 +6,7 @@
           <div class="portfolio-item__top">
             <div class="portfolio-item__title text-super">
               <span>{{ p.title }}</span>
-              <a :href="p.link" target="_blank" class="portfolio-item__badge">{{
+              <a :href="p.link" :target="p.target" class="portfolio-item__badge">{{
                 p.badge
               }}</a>
             </div>
@@ -35,7 +35,7 @@
             v-if="p.pageUrl"
             :href="p.pageUrl"
             class="portfolio-item__link"
-            target="_blank"
+            :target="p.target"
           ></a>
         </div>
       </li>
@@ -48,8 +48,9 @@ export default {
   portfolio: [
     {
       title: 'Efremov',
-      badge: 'Смотреть на Behance',
-      link: 'https://www.behance.net/gallery/151467861/EFREMOV',
+      badge: 'Подробнее',
+      link: '/case-efremov',
+      target: '_self',
       subtitle:
         'Интернет-каталог ювелирных изделий для оптовых клиентов компании',
       pageUrl: '/case-efremov',
@@ -73,6 +74,7 @@ export default {
       title: 'Med.Studio',
       badge: 'med.studio',
       link: 'https://med.studio/',
+      target: '_blank',
       subtitle:
         'Онлайн-платформа для дополнительного образования медицинских сотрудников',
       sizes: '480px',
@@ -95,6 +97,7 @@ export default {
       title: '1С Вьетнам',
       badge: '1c.com.vn',
       link: 'https://1c.com.vn/vn',
+      target: '_blank',
       subtitle: 'Портал программных продуктов 1С для вьетнамского рынка',
       sizes: '603px',
       sources: [
@@ -116,6 +119,7 @@ export default {
       title: 'ОМК',
       badge: 'openmedcom.ru',
       link: 'https://openmedcom.ru/',
+      target: '_blank',
       subtitle: 'Проект дистанционного образования для врачей',
       sizes: '542px',
       sources: [

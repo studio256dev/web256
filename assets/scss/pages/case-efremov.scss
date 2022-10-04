@@ -1,0 +1,24 @@
+.case-container {
+  @media (min-width: 1020px) {
+    margin-left: 70px;
+  }
+
+  @media (min-width: 1256px) {
+    margin-left: 105px;
+  }
+}
+
+.arx-content {
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @media (min-width: 400px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: 1020px) {
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+}
