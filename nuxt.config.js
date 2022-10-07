@@ -66,6 +66,12 @@ export default {
         src: '//af.click.ru/af.js?id=12433',
         defer: true
       },
+      {
+        src: 'https://livechatv2.chat2desk.com/packs/ie-11-support.js',
+      },
+      {
+        src: '/js/chat2desk.js',
+      },
     ]
   },
 
