@@ -7,7 +7,7 @@ window.lang = "ru";
 window.fetch("".concat(window.chat24_url, "/packs/manifest.json?nocache=").concat(new Date().getTime())).then(function (res) {
   return res.json();
 }).then(function (data) {
-  var chat24 = document.createElement("script");
+  const chat24 = document.createElement("script");
   chat24.type = "text/javascript";
   chat24.async = true;
   chat24.src = "".concat(window.chat24_url).concat(data["application.js"]);
