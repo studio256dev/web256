@@ -91,6 +91,33 @@
             <a href="tel:+79159101112">+7 915 910 11 12</a>
             <a href="mailto:hello@s256.ru">hello@s256.ru</a>
           </div>
+
+          <div class="mob-menu__social">
+            <ul class="mob-menu__social-list">
+              <li class="mob-menu__social-item">
+                <a href="tg://resolve?domain=nik_borodin">
+                  <IconTelegram />
+                </a>
+              </li>
+
+              <li class="mob-menu__social-item">
+                <a href="https://wa.me/79159101112">
+                  <IconWhatsApp />
+                </a>
+              </li>
+
+              <li class="mob-menu__social-item">
+                <a href="https://www.behance.net/gallery/151467861/EFREMOV">
+                  <IconBe />
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mob-menu__organization-info">
+            <span>ИНН 4401184881</span>
+            <span>ООО "СТУДИЯ 256”</span>
+          </div>
         </div>
       </div>
     </transition>
@@ -105,6 +132,9 @@ import {
   IconX,
   IconLogoMob,
   IconPhone,
+  IconTelegram,
+  IconWhatsApp,
+  IconBe,
 } from '~/components/icons'
 
 export default {
@@ -115,6 +145,9 @@ export default {
     IconX,
     IconLogoMob,
     IconPhone,
+    IconTelegram,
+    IconWhatsApp,
+    IconBe,
   },
 
   props: {

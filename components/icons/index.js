@@ -32,6 +32,7 @@ import IconDocker from './technologies/icon-docker'
 import IconVue from './technologies/icon-vue'
 import IconTelegram from'./contact/icon-telegram'
 import IconWhatsApp from'./contact/icon-whats-app'
+import IconBe from'./contact/icon-be'
 
 export {
   IconMouse,
@@ -68,4 +69,5 @@ export {
   IconTelegram,
   IconWhatsApp,
   IconArrowRightCircle,
+  IconBe,
 }
